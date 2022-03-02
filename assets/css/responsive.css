@@ -1,0 +1,85 @@
+@media only screen and (max-width: 1030px)
+{
+    header .container,
+    .area-preview,
+    .picture-content { max-width: 800px; }
+    .accept-photo button { font-size: 2vw; }
+
+    .area-preview { height: 500px; }
+    .widget .picture { height: 180px; }
+}
+
+@media only screen and (max-width: 820px)
+{
+    header .container,
+    .area-preview,
+    .picture-content
+    {
+        max-width: 600px;
+    }
+
+    .area-preview { height: 360px; }
+    .picture-content { grid-template-columns: repeat(2, 1fr); }
+
+    .widget button
+    {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 620px)
+{
+    header .container,
+    .area-preview,
+    .picture-content,
+    .view-container
+    {
+        padding-right: 10px;
+        padding-left: 10px;
+        max-width: none;
+    }
+
+    header .line { height: 8px; }
+    header .container
+    {
+        display: flex;
+        font-size: 5vw;
+        justify-content: center;
+    }
+    header .logo span { padding: 1.5vw; }
+
+    .accept-photo { flex-direction: column; }
+    .accept-photo button
+    { 
+        width: auto; height: auto;
+        padding: 1vw 5vw;
+        font-size: 2.6vw;
+        border-radius: 5px !important;
+    }
+    .accept-photo button::before
+    {
+        width: 30px;
+        height: 30px;
+        background-size: calc(100% - 10px);
+    }
+    .accept-photo button[class="accept"] { margin-bottom: 10px; }
+
+    .area-preview { height: 50vw; }
+    .select--image { font-size: 3vw; }
+    .widget .picture { height: 29vw; }
+    .widget .dateRecord { font-size: 2.2vw; }
+}
+
+@media only screen and (max-width: 500px)
+{
+    .picture-content { grid-template-columns: 1fr; }
+    .select--image 
+    { 
+        font-size: 4vw;
+        text-align: center; 
+    }
+    .accept-photo button { font-size: 3vw; }
+    .widget .picture { height: 52vw; }
+    .widget .dateRecord { font-size: 4vw; }
+}
